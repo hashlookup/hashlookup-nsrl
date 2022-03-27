@@ -58,7 +58,7 @@ for i, row in enumerate(cur):
     if 'sha1' in row:
         h.add_hash(value=row['sha1'], hashtype='SHA-1')
     if 'md5' in row:
-        h.add_hash(value=row['md5'], hashtype="SHA-512")
+        h.add_hash(value=row['md5'], hashtype='MD5')
     if 'file_name' in row:
         h.add_meta(key='FileName', value=row['file_name'])
     if 'file_size' in row:
